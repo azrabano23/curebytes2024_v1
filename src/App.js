@@ -27,8 +27,6 @@ function HomePage() {
         </p>
         <p className="status-message">{message ? message : 'Select an option'}</p>
         <div className="button-container">
-
-          <button className="button" onClick={() => navigate('/teacher')}>🍎 Teacher</button>
           <button className="button" onClick={() => navigate('/student')}>📚 Student</button>
 
         </div>
