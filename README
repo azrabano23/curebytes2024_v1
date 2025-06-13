@@ -1,32 +1,141 @@
-Group 2 - Rutgers Health Hack Fall 2024
+# 🧬 CureBytes – AI-Powered Feedback Tool for Medical Education  
+**Group 2 – Rutgers Health Hack Fall 2024**  
+🏆 *Honorary Mention Winner – $750 Prize*
 
-UPDATE 11/22: WINNER at Health Hack 2024 - Honorary Mention ($750)
+---
 
-Abhinav Ramidi
-Beomseok Park
-Shariar Uddin
-Preet Patel
-Nikhil Shukla
-Azra Bano
-Wanzhao Yang
-Naveen Gedupoori
-Manav Vohra
-Rishabh Dhingra
-Sumedh Sinha
+## 👥 Team Members
+- Abhinav Ramidi  
+- Beomseok Park  
+- Shariar Uddin  
+- Preet Patel  
+- Nikhil Shukla  
+- Azra Bano  
+- Wanzhao Yang  
+- Naveen Gedupoori  
+- Manav Vohra  
+- Rishabh Dhingra  
+- Sumedh Sinha  
 
+---
 
-Install the required libraries, use the following commands 
+## 💡 Overview
 
-npm install
-npm install @google/generative-ai
-npm install react-router-dom
+**CureBytes** is a cloud-based AI platform designed to help **medical educators** provide fast, structured feedback on clinical notes written by students during **OSCEs (Objective Structured Clinical Examinations)**. The app significantly reduces the time required for grading, making room for deeper clinical mentorship.
 
-This is an application designed to aid med schools and enhance the student experience. 
+> 🔍 *OSCEs are a cornerstone of medical education — but evaluating and providing feedback on clinical notes is tedious, time-consuming, and inconsistently handled across institutions.*
 
-It has been deployed on AWS using Amplify (expires 27 Oct 2024): https://newr.dv3r7ksuvk0b0.amplifyapp.com/
+---
 
-YouTube walkthrough: https://youtu.be/iOtvVrJdf8Q
+## ❗ Problem Statement
 
-Slides: CureBytes.pdf (in repo)
+Medical schools face growing class sizes, rising administrative demands, and limited teaching bandwidth.  
+> ⏳ *According to a 2023 AAMC report, faculty spend an average of **5–10 hours/week** on feedback.*  
+>  
+> 💡 *LLM-driven systems like CureBytes can automate this task, potentially reducing the burden by **60% or more**.*
 
-*PLEASE SEE BRANCH newr*
+---
+
+## ✅ Key Features
+
+- **AI-Powered Feedback Generation**  
+  Uses two fine-tuned **Google Gemini AI** LLMs to generate accurate, consistent, and structured feedback.
+
+- **Token Limit Workaround**  
+  Implements a **LinkedList-style segmentation** strategy to maintain context across long OSCE notes.
+
+- **Educator Dashboard**  
+  Upload and manage student notes, view feedback in real-time, and export summaries.
+
+- **Student Learning Tool**  
+  Provides clear, AI-generated feedback that helps students improve clinical documentation.
+
+- **Deployed via AWS Amplify**  
+  Secure, scalable, and accessible in real-time.
+
+---
+
+## 🌐 Live Deployment
+
+> 🔗 **[Try CureBytes (Active Until Oct 27, 2024)](https://newr.dv3r7ksuvk0b0.amplifyapp.com/)**  
+> 📂 *Please view the project on the `newr` branch.*
+
+---
+
+## 🎥 Resources
+
+- ▶️ **[YouTube Walkthrough](https://youtu.be/iOtvVrJdf8Q)**  
+- 📄 **Slides**: `CureBytes.pdf` *(included in repo)*  
+- 💻 **Original GitHub Repo**: [github.com/sumedhsinha/health-hack-2024Oct](https://github.com/sumedhsinha/health-hack-2024Oct)
+
+---
+
+## 🛠️ Tech Stack
+
+| Component        | Tools Used                                |
+|------------------|--------------------------------------------|
+| Frontend         | HTML/CSS, React, JavaScript                |
+| Backend          | Node.js                                    |
+| AI Models        | Google Gemini AI (2 fine-tuned LLMs)       |
+| NLP Strategy     | LinkedList-based token segmentation        |
+| Hosting/Deploy   | AWS Amplify                                |
+| Routing          | React Router DOM                           |
+
+---
+
+## 📦 Installation Instructions
+
+To get started with development:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/curebytes.git
+   cd curebytes
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   npm install @google/generative-ai
+   npm install react-router-dom
+   ```
+
+3. **Run the app**
+   ```bash
+   npm start
+   ```
+
+---
+
+## 🧠 My Contributions *(Azra Bano)*
+
+- **Full-Stack Development**: Integrated Gemini AI endpoints and handled both front and backend interaction flows.  
+- **Medical Research Integration**: Tailored prompt structure and evaluation criteria to match OSCE grading rubrics.  
+- **NLP Design**: Implemented LinkedList-style segmentation to maintain context across LLM token boundaries.  
+- **Pitching & Presentation**: Contributed to final walkthroughs and live judging session.
+
+---
+
+## 🚀 Future Possibilities
+
+CureBytes can evolve into a broader educational tool by expanding to:
+- 🧪 Radiology Report Analysis  
+- 🗣️ Patient Communication Feedback  
+- 📄 SOAP Note Summarization  
+- 🧠 Longitudinal Student Performance Tracking
+
+---
+
+## 📄 License
+
+This project is open-source and developed under the MIT License for educational purposes.
+
+---
+
+## 🙌 Acknowledgments
+
+Thanks to:
+- **Rutgers Health Hack 2024 Organizers**  
+- **Google Cloud & Gemini AI** for LLM services  
+- **AWS Amplify** for seamless cloud deployment  
+- All mentors, judges, and collaborators who supported our journey  
